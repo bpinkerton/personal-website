@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+  background: #293241
+  highlights: #ee6c4d
+  primary: #808080
+  text: #98c1d9
+  text2: #e0fbfc
+ */
+
 html,
 body {
   padding: 0;
@@ -25,6 +33,6 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background: #293241;
   }
 }
