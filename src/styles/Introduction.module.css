@@ -1,0 +1,40 @@
+.dynamicTxt{
+    margin-left: 15px;
+    height: 32px;
+    line-height: 32px;
+    overflow: hidden;
+}
+
+.dynamicTxt li{
+    top: 0;
+    position: relative;
+    animation: slide 8s steps(4) infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes slide {
+    100%{
+        top: -168px;
+    }
+}
+.dynamicTxt li span{
+    position: relative;
+}
+
+.dynamicTxt li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 110%;
+    width: 100%;
+    border-left: 2px solid #ee6c4d;
+    background: #293241;
+    animation: typing 2s steps(17) infinite;
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
