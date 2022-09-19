@@ -2,7 +2,7 @@ import React, {MouseEventHandler} from 'react';
 
 type ButtonProps = {
     label: string;
-    onClick: MouseEventHandler;
+    onClick?: MouseEventHandler;
 }
 
 function Button({label, onClick}: ButtonProps) {

@@ -3,7 +3,6 @@ import Logo from "../atoms/Logo";
 import Button from "../atoms/Button";
 import NavbarItem from "../atoms/NavbarItem";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
-import Link from "next/link";
 
 const navItems = [
     {
@@ -30,7 +29,7 @@ function Header() {
 
 
     return <>
-        <nav className={"navbar navbar-expand-lg shadow-md pr-10 relative flex items-center w-full justify-between"}>
+        <nav className={`navbar navbar-expand-lg shadow-md pr-10 relative flex items-center w-full justify-between ${width < 430 ? "w-[150%]" : "w-[100%]"}`}>
             <div className={`${menuOpen ? "absolute top-0 left-0 " : "flex items-start "} ${collapsed ? "pl-12" : "pl-[7%]"} pt-2`}>
                 <Logo />
             </div>
@@ -79,7 +78,7 @@ function Header() {
 }
 
 function ResumeButton(){
-    return <a href={"../../../resume.pdf"} target={"_blank"} rel={"noreferrer"}><Button label={"Resume"} onClick={() => {}}/></a>
+    return <a href={"../../../resume.pdf"} target={"_blank"} rel={"noreferrer"}><Button label={"Resume"} /></a>
 }
 
 export default Header;
