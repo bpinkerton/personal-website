@@ -3,7 +3,7 @@ import style from "../../styles/Introduction.module.css"
 
 function Introduction() {
     return (
-        <div id={"#"} className={"py-[17%] pl-20 font-mono min-w-[520px]"}>
+        <div id={"#"} className={"py-[15%] font-mono min-w-[520px] sm:pl-0 pl-8"}>
             <div className={"text-sm text-primary-dark "}>
                 Hi, my name is
             </div>

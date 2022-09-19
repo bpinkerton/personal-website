@@ -4,7 +4,10 @@ import Header from "../components/molecules/Header";
 function MyApp({ Component, pageProps }) {
   return <>
     <Header />
-    <Component {...pageProps} />
+    <div className={"grid place-items-center"}>
+      <Component {...pageProps} />
+    </div>
+
   </>
 }
 
