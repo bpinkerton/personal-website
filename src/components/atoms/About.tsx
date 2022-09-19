@@ -14,7 +14,7 @@ function About() {
                     to keep up with the hardware boom in gaming. I quickly became fascinated with
                     how computers worked and, over time, my focus shifted from hardware to software.
                     <br/> <br/>
-                    Over the years I have worked a variety of jobs within the tech-umbrella.
+                    Throughout the years, I have worked a variety of jobs within the tech-umbrella.
                     From <PrimaryText text={"Tech Support"}/>, <PrimaryText text={"Quality Assurance "}/>
                     and <PrimaryText text={"Product Owner"}/>, to <PrimaryText text={"Full Stack Engineer "}/>
                     and my latest endeavor, <PrimaryText text={"Software Engineering Trainer"}/>.
