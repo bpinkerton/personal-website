@@ -5,7 +5,19 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    listStyleType: {
+
+    },
     extend: {
+      animation: {
+        fadeIn: "fadeIn 2s ease-in forwards"
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": {opacity: 0},
+          "100%": {opacity: 1},
+        }
+      },
       colors: {
         background: {
           light: 'rgba(41,50,65,0.19)',
@@ -22,6 +34,13 @@ module.exports = {
       }
     },
   },
-  plugins: [],
-
+  plugins: [
+    function ({ addVariant }) {
+      addVariant('child', '& > *');
+      addVariant('child-hover', '& > *:hover');
+    }
+  ],
+  variants: {
+    animation: ["motion-safe"]
+  }
 }
